@@ -1,0 +1,71 @@
+html {
+	padding: 0;
+	margin: 0;
+	font-family: Noto sans;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	margin: 0;
+	padding: 0;
+}
+
+.navigation {
+	margin: auto;
+	padding: 15px 10vw 15px 10vw;
+	display: grid;
+	background-color: #db4;
+	grid-template-columns: 150px 1fr;
+	align-items: center;
+}
+
+.navigation-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.navigation-item {
+	margin: 0;
+	padding: 25px;
+	border-radius: 23px;
+	background-color: #adf;
+	transition: 100ms ease-in-out;
+}
+
+	.navigation-item:hover {
+		background-color: #8ab;
+		box-shadow: 0px 0px 10px #000;
+	}
+
+.logo {
+	width: 64px;
+	
+}
+
+h1 {
+	padding: 50px 10px 50px 10px;
+	margin: 150px auto 50px auto;
+	text-align: center;
+	width: max-content;
+}
+
+.photosalo-text {
+	font-style: italic;
+	color: #adf
+}
+
+.infoblock {
+	margin: 50px auto 25px auto;
+	padding: 10px;
+	width: 65vw;
+	background-color: #eee;
+}
+
+li {
+	list-style-type: none;
+}
