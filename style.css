@@ -1,71 +1,90 @@
 html {
-	padding: 0;
-	margin: 0;
-	font-family: Noto sans;
+    padding: 0;
+    margin: 0;
+    font-family: Noto sans;
 }
 
 body {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 header {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation {
-	margin: auto;
-	padding: 15px 10vw 15px 10vw;
-	display: grid;
-	background-color: #db4;
-	grid-template-columns: 150px 1fr;
-	align-items: center;
+    margin: auto;
+    padding: 0 5vw 0 5vw;
+    display: grid;
+    background-color: #db4;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
 }
 
 .navigation-list {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-.navigation-item {
-	margin: 0;
-	padding: 25px;
-	border-radius: 23px;
-	background-color: #adf;
-	transition: 100ms ease-in-out;
-}
-
-	.navigation-item:hover {
-		background-color: #8ab;
-		box-shadow: 0px 0px 10px #000;
-	}
-
-.logo {
-	width: 64px;
-	
-}
-
-h1 {
-	padding: 50px 10px 50px 10px;
-	margin: 150px auto 50px auto;
-	text-align: center;
-	width: max-content;
-}
-
-.photosalo-text {
-	font-style: italic;
-	color: #adf
-}
-
-.infoblock {
-	margin: 50px auto 25px auto;
-	padding: 10px;
-	width: 65vw;
-	background-color: #eee;
+    display: flex;
+    justify-content: space-between;
 }
 
 li {
-	list-style-type: none;
+    list-style-type: none;
 }
+
+.navigation-item {
+    margin: 0;
+    padding: 25px;
+    border-radius: 23px;
+    background-color: #adf;
+    transition: 100ms ease-in-out;
+}
+
+    .navigation-item:hover {
+        background-color: #8ab;
+        box-shadow: 0px 0px 10px #000;
+    }
+
+    .navigation-item:nth-child(3) {
+        background-color: magenta;
+    }
+
+.logo {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo-text {
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    block-size: max-content;
+    color: black;
+}
+
+h1 {
+    padding: 50px 10px 50px 10px;
+    margin: 150px auto 50px auto;
+    text-align: center;
+    align-items: center;
+    width: 60vw;
+}
+
+.photosalo-text {
+    font-style: italic;
+    color: #adf;
+}
+
+.begining {
+    margin: 0;
+    padding: 50px 17.5vw 25px 17.5vw;
+    background: url("./resources/template.jpg") center;
+}
+
+.land-cost {
+    margin: 0;
+    padding: 50px 17.5vw 25px 17.5vw;
+}
+
