@@ -80,7 +80,7 @@ h1 {
 .begining {
     margin: 0;
     padding: 50px 17.5vw 25px 17.5vw;
-    background: url(./Resources/template.jpg) center;
+    background: url(./Resources/Images/template.jpg) center;
 }
 
 .land-cost {
@@ -88,3 +88,8 @@ h1 {
     padding: 50px 17.5vw 25px 17.5vw;
 }
 
+.yamap {
+    padding: 50px 5vw 50px 5vw;
+    margin: 0 auto 0 auto;
+    width: max-content;
+}
