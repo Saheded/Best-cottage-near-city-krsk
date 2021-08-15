@@ -26,6 +26,8 @@ header {
 .navigation-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
 }
 
 li {
@@ -42,12 +44,19 @@ li {
 
     .navigation-item:hover {
         background-color: #8ab;
-        box-shadow: 0px 0px 10px #000;
+/*        box-shadow: 0px 0px 10px #000;*/
+        padding-bottom: 20px;
+        border-bottom: 5px solid #000;
     }
 
-    .navigation-item:nth-child(3) {
+/*    .navigation-item:nth-child(3) {
         background-color: magenta;
-    }
+    }*/
+
+a {
+    color: black;
+    text-decoration: none;
+}
 
 .logo {
     text-align: center;
@@ -65,31 +74,108 @@ li {
 }
 
 h1 {
-    padding: 50px 10px 50px 10px;
-    margin: 150px auto 50px auto;
+    padding: 0;
+    margin: 0;
     text-align: center;
     align-items: center;
     width: 60vw;
 }
 
-.photosalo-text {
-    font-style: italic;
-    color: #adf;
-}
-
 .begining {
     margin: 0;
-    padding: 50px 17.5vw 25px 17.5vw;
-    background: url(./Resources/Images/template.jpg) center;
+    padding: 50px 0 0 0;
+    background: url(./Resources/Images/thumbnail.jpg) center no-repeat;
 }
 
-.land-cost {
-    margin: 0;
-    padding: 50px 17.5vw 25px 17.5vw;
+.thumbnail-text {
+    font-style: italic;
+    color: #adf;
+    mix-blend-mode: difference;
+    margin: 0 auto 0 auto;
+    padding: 50px 0 240px 0;
 }
+
+.thumbnail-text-header {
+    color: #fff;
+}
+
+.container {
+    padding: 50px 17.5vw 25px 17.5vw;
+    margin: 0 auto 0 auto;
+}
+
+.thumbnail-text-regular {
+    color: #fff;
+}
+
+.description-header {
+    text-align: center;
+    font-size: 25px;
+}
+
+.description-with-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.content-image {
+    max-width: 30vw;
+    align-content: center;
+    margin: auto;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    width: 80vw;
+    position: relative;
+    margin: 15px auto 15px auto;
+    padding: 10px;
+    outline: 2px dotted #333;
+}
+
+.slideshow-container-header {
+    padding: 0;
+    margin: 20px auto 10px auto;
+    width: max-content;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a grey background color */
+    .prev:hover, .next:hover {
+        background-color: #f1f1f1;
+        color: black;
+    }
+
+
 
 .yamap {
-    padding: 50px 5vw 50px 5vw;
-    margin: 0 auto 0 auto;
+    padding: 0;
+    margin: 50px auto 50px auto;
     width: max-content;
 }
