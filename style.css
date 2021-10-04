@@ -17,3 +17,52 @@ header {
 li {
     list-style-type: none;
 }
+
+h1 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h2 {
+    ;
+}
+
+h3 {
+    ;
+}
+
+h4 {
+    ;
+}
+
+.grid {
+    display: grid;
+}
+
+.container {
+    ;
+}
+
+.dark {
+    ;
+}
+
+.light {
+    ;
+}
+
+.light-animation {
+    ;
+}
+
+    .light-animation:hover {
+        ;
+    }
+
+.dark-animation {
+    ;
+}
+
+    .dark-animation:hover {
+        ;
+    }
