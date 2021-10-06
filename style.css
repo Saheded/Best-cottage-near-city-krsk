@@ -106,7 +106,9 @@ h4 {
 }
 
 .light-animation:hover {
-    ;
+    transition: 100ms ease-in-out;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .dark-animation:hover {
