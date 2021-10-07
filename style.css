@@ -47,18 +47,27 @@ a {
 h1 {
     font-size: 32px;
     font-weight: 400;
+    text-align: center;
+    width: max-content;
+    margin: auto;
 }
 
 h2 {
-    ;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    width: max-content;
+    margin: auto;
 }
 
 h3 {
-    ;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 h4 {
-    ;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .grid {
@@ -84,9 +93,44 @@ h4 {
 }
 
 .container {
-    padding: 0 10% 0 10%;
+    padding: 0 15% 0 15%;
     height: max-content;
+    z-index: 2;
 }
+
+.content {
+    margin: 0;
+    padding: 1% 10% 1% 10%;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3vw;
+}
+
+.slideshow {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #c4c4c4;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    height: 100%;
+    background-image: src(./Resources/Raster/thumbnail.jpg)
+}
+
+.left-arrow {
+    ;
+}
+
+    .left-arrow:hover {
+        transition: 100ms ease-in-out;
+    }
+
+.right-arrow {
+    ;
+}
+
+    .right-arrow:hover {
+        transition: 100ms ease-in-out;
+    }
 
 .dark {
     color: #E6DBD1;
@@ -118,7 +162,7 @@ h4 {
 }
 
 .up-button {
-    display: block;
+    display: none;
     position: fixed;
     color: #090A09;
     background-color: none;
@@ -128,10 +172,15 @@ h4 {
     bottom: 0;
     left: 0;
     z-index: 0;
+    transition: 100ms ease-in-out;
+    cursor: pointer;
 }
 
-    .up-button:hover {
-        transition: 100ms ease-in-out;
-        background-color: rgba(66, 62, 66, 0.50);
-        text-decoration: underline;
-    }
+.up-button:hover {
+    background-color: rgba(66, 62, 66, 0.50);
+    text-decoration: underline;
+}
+
+.up-button-show {
+    display: block;
+}
