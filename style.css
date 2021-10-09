@@ -193,7 +193,7 @@ html, body {
 
         .slider-nav button.slider-previous {
             float: left;
-            background-image: url(./Resources/Vector/arrow-left-test.svg);
+            background-image: url(./Resources/Vector/arrow-left.svg);
             display: none;
             margin-left: 0;
         }
