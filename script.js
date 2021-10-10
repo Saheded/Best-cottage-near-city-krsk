@@ -223,7 +223,7 @@
 
     document.addEventListener("DOMContentLoaded", function () {
 
-        var slider = new Slideshow("#buildings-garden-slider", function (slide) {
+        var slider = new Slideshow("#garden-slider", function (slide) {
             var wrapper = slide.parentNode;
             var allSlides = wrapper.querySelectorAll(".slide");
             var caption = slide.querySelector(".slide-caption");
