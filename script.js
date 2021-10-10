@@ -117,7 +117,7 @@
 
     document.addEventListener("DOMContentLoaded", function () {
 
-        var slider = new Slideshow("#main-slider", function (slide) {
+        var slider = new Slideshow("#area-slider", function (slide) {
             var wrapper = slide.parentNode;
             var allSlides = wrapper.querySelectorAll(".slide");
             var caption = slide.querySelector(".slide-caption");
@@ -126,6 +126,132 @@
             for (var i = 0; i < allSlides.length; ++i) {
                 var sld = allSlides[i];
                 var cpt = sld.querySelector(".slide-caption");
+                if (sld !== slide) {
+                    cpt.classList.remove("visible");
+                }
+            }
+
+
+        });
+
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        var slider = new Slideshow("#cottage-slider", function (slide) {
+            var wrapper = slide.parentNode;
+            var allSlides = wrapper.querySelectorAll(".slide");
+            var caption = slide.querySelector(".slide-caption");
+            caption.classList.add("visible");
+
+            for (var i = 0; i < allSlides.length; ++i) {
+                var sld = allSlides[i];
+                var cpt = sld.querySelector(".slide-caption");
+                if (sld !== slide) {
+                    cpt.classList.remove("visible");
+                }
+            }
+
+
+        });
+
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        var slider = new Slideshow("#buildings-sauna-slider", function (slide) {
+            var wrapper = slide.parentNode;
+            var allSlides = wrapper.querySelectorAll(".slide");
+            var caption = slide.querySelector(".slide-caption");
+            caption.classList.add("visible");
+
+            for (var i = 0; i < allSlides.length; ++i) {
+                var sld = allSlides[i];
+                var cpt = sld.querySelector(".slide-caption");
+                if (sld !== slide) {
+                    cpt.classList.remove("visible");
+                }
+            }
+
+
+        });
+
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        var slider = new Slideshow("#buildings-rest_place-slider", function (slide) {
+            var wrapper = slide.parentNode;
+            var allSlides = wrapper.querySelectorAll(".slide");
+            var caption = slide.querySelector(".slide-caption");
+            caption.classList.add("visible");
+
+            for (var i = 0; i < allSlides.length; ++i) {
+                var sld = allSlides[i];
+                var cpt = sld.querySelector(".slide-caption");
+                if (sld !== slide) {
+                    cpt.classList.remove("visible");
+                }
+            }
+
+
+        });
+
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        var slider = new Slideshow("#buildings-workshop-slider", function (slide) {
+            var wrapper = slide.parentNode;
+            var allSlides = wrapper.querySelectorAll(".slide");
+            var caption = slide.querySelector(".slide-caption");
+            caption.classList.add("visible");
+
+            for (var i = 0; i < allSlides.length; ++i) {
+                var sld = allSlides[i];
+                var cpt = sld.querySelector(".slide-caption");
+                if (sld !== slide) {
+                    cpt.classList.remove("visible");
+                }
+            }
+
+
+        });
+
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        var slider = new Slideshow("#buildings-garden-slider", function (slide) {
+            var wrapper = slide.parentNode;
+            var allSlides = wrapper.querySelectorAll(".slide");
+            var caption = slide.querySelector(".slide-caption");
+            caption.classList.add("visible");
+
+            for (var i = 0; i < allSlides.length; ++i) {
+                var sld = allSlides[i];
+                var cpt = sld.querySelector(".slide-caption");
+                if (sld !== slide) {
+                    cpt.classList.remove("visible");
+                }
+            }
+
+
+        });
+
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+
+        var slider = new Slideshow("#gallery-slider", function (slide) {
+            var wrapper = slide.parentNode;
+            var allSlides = wrapper.querySelectorAll(".slide");
+            var caption = slide.querySelector(".slide-caption-mod");
+            caption.classList.add("visible");
+
+            for (var i = 0; i < allSlides.length; ++i) {
+                var sld = allSlides[i];
+                var cpt = sld.querySelector(".slide-caption-mod");
                 if (sld !== slide) {
                     cpt.classList.remove("visible");
                 }
